@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Точка сборки — 5 дней с Alberta Shirani</title>
+  <meta name="description" content="5 дней. Аудио по 10 минут. Убираем пробелы, возвращаем опору. Трипвайер Alberta Shirani — 490 ₽." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="Точка сборки" class="nav-logo-img" />
+        <span class="nav-logo-text">Alberta Shirani</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">О чём это</a>
+        <a href="#program">Программа</a>
+        <a href="#for-whom">Для кого</a>
+        <a href="#buy" class="nav-cta">Войти — 490 ₽</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="nav-scrim" id="navScrim" hidden></div>
+  <div class="nav-drawer" id="navDrawer" hidden>
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <a href="#about" class="drawer-link">О чём это</a>
+    <a href="#program" class="drawer-link">Программа</a>
+    <a href="#for-whom" class="drawer-link">Для кого</a>
+    <a href="#buy" class="drawer-link drawer-cta">Войти — 490 ₽</a>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">Alberta Shirani</div>
+      <h1 class="hero-title reveal">
+        <span class="line-1">Точка</span>
+        <span class="line-2 grad-text">сборки</span>
+      </h1>
+      <p class="hero-sub reveal">5 дней, чтобы убрать пробелы<br>и вернуть опору</p>
+      <div class="hero-pills reveal">
+        <span class="pill">🎧 5 аудио по 10–15 мин</span>
+        <span class="pill">📋 Диагностика</span>
+        <span class="pill">🔒 Закрытый канал</span>
+      </div>
+      <div class="hero-price reveal">
+        <div class="price-block">
+          <span class="price-old">2 000 ₽</span>
+          <span class="price-new">490 ₽</span>
+        </div>
+        <a href="#buy" class="btn-primary pulse">Войти в программу →</a>
+      </div>
+      <p class="hero-note reveal">Старт — сразу после оплаты. Доступ — навсегда.</p>
+    </div>
+    <div class="scroll-hint">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- ═══════════ WHAT IS IT ═══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-badge reveal">Что это такое</div>
+      <h2 class="section-title reveal">Два слова,<br><span class="grad-text">которые всё объясняют</span></h2>
+
+      <div class="concepts-grid reveal">
+        <div class="concept-card card-gold">
+          <div class="concept-icon">🧭</div>
+          <h3>Точка сборки</h3>
+          <p>То место внутри, откуда ты принимаешь решения, чувствуешь себя в ресурсе, понимаешь — что правильно именно для тебя.</p>
+          <div class="concept-divider"></div>
+          <p class="concept-when"><strong>Когда на месте</strong> — даже хаос не выбивает из колеи.</p>
+          <p class="concept-when"><strong>Когда смещена</strong> — устаёшь, зависишь от чужого мнения, выбираешь не тех.</p>
+        </div>
+        <div class="concept-card card-rose">
+          <div class="concept-icon">🕳️</div>
+          <h3>Пробелы</h3>
+          <p>Дыры между сферами жизни, куда утекает твоя энергия, потому что целостности нет.</p>
+          <div class="concept-divider"></div>
+          <div class="probely-list">
+            <div class="prob-item">Деньги есть — отношений нет</div>
+            <div class="prob-item">Работа кипит — здоровье рушится</div>
+            <div class="prob-item">Умная — а выбираешь не тех</div>
+          </div>
+        </div>
+      </div>
+
+      <blockquote class="quote reveal">
+        <span class="quote-mark">"</span>
+        Следующие 5 дней мы будем возвращать точку сборки туда, где ей положено быть.
+        <span class="quote-author">— Alberta Shirani</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROGRAM ═══════════ -->
+  <section class="section section-dark" id="program">
+    <div class="container">
+      <div class="section-badge reveal">Программа</div>
+      <h2 class="section-title reveal">5 дней.<br><span class="grad-text">5 аудио. Без воды.</span></h2>
+      <p class="section-desc reveal">Каждое утро — голосовое от Alberta. 10–15 минут. Слушаешь в своём темпе.</p>
+
+      <div class="days-timeline reveal">
+
+        <div class="day-item">
+          <div class="day-num">0</div>
+          <div class="day-content">
+            <div class="day-tag">Диагностика</div>
+            <h4>Где сейчас твоя точка сборки</h4>
+            <p>Приветственное аудио + Google-форма из 5 вопросов. Твоя личная карта перед стартом.</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-num">1</div>
+          <div class="day-content">
+            <div class="day-tag">Понимание</div>
+            <h4>Где сейчас твоя точка — а где ей положено быть</h4>
+            <p>Три признака смещения. Упражнение «Стоп-кадр»: три раза в день — 10 секунд честности.</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-num">2</div>
+          <div class="day-content">
+            <div class="day-tag">Картография</div>
+            <h4>Пробелы: где разрывается твоя целостность</h4>
+            <p>Четыре сферы. Упражнение «Четыре круга» — видишь, где главная дыра.</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-num">3</div>
+          <div class="day-content">
+            <div class="day-tag">Деньги</div>
+            <h4>Точка сборки и деньги</h4>
+            <p>Почему трудно зарабатывать и тратить. Пробел между «я могу» и «я разрешаю себе».</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-num">4</div>
+          <div class="day-content">
+            <div class="day-tag">Очищение</div>
+            <h4>Сборка через отказ</h4>
+            <p>Что убрать, чтобы точка встала. Один отказ, который меняет всё.</p>
+          </div>
+        </div>
+
+        <div class="day-item">
+          <div class="day-num">5</div>
+          <div class="day-content">
+            <div class="day-tag">Закрепление</div>
+            <h4>Новая точка сборки: как не съехать</h4>
+            <p>Техника «Якорь» и «Утренний вопрос». Как удерживать опору в обычной жизни.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOR WHOM ═══════════ -->
+  <section class="section" id="for-whom">
+    <div class="container">
+      <div class="section-badge reveal">Для кого</div>
+      <h2 class="section-title reveal">Это для тебя,<br><span class="grad-text">если узнаёшь себя</span></h2>
+
+      <div class="signals-grid reveal">
+        <div class="signal-card">
+          <div class="signal-icon">😔</div>
+          <p>Делаешь, стараешься — а внутри ощущение, что идёшь чуть не туда</p>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">🔄</div>
+          <p>Говоришь «да», хотя хочешь сказать «нет» — и потом злишься на себя</p>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">⚡</div>
+          <p>Энергия уходит в какую-то сферу, а другие — на нуле</p>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">💸</div>
+          <p>С деньгами странно: то уходят в песок, то зарабатываешь — но не радует</p>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">👁️</div>
+          <p>Зависишь от чужого мнения — даже если снаружи сильная и независимая</p>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">🧩</div>
+          <p>Не можешь выбрать между двумя равными вариантами — и это изматывает</p>
+        </div>
+      </div>
+
+      <div class="not-for reveal">
+        <div class="not-for-inner">
+          <h3>Это НЕ для тебя, если ты ищешь:</h3>
+          <div class="not-list">
+            <span>❌ 100 домашних заданий</span>
+            <span>❌ Мотивационные речи</span>
+            <span>❌ «Просто позитивное мышление»</span>
+            <span>❌ Готовый алгоритм «как стать счастливой»</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ AUTHOR ═══════════ -->
+  <section class="section section-dark" id="author">
+    <div class="container">
+      <div class="author-block reveal">
+        <div class="author-photo-wrap">
+          <div class="author-photo-placeholder">
+            <span>AS</span>
+          </div>
+          <div class="author-glow"></div>
+        </div>
+        <div class="author-text">
+          <div class="section-badge">Кто это</div>
+          <h2 class="author-name">Alberta Shirani</h2>
+          <p class="author-desc">Психолог, коуч, автор методики «Точка сборки». Работает с женщинами, которые умеют многое — но устали от ощущения, что живут не из себя.</p>
+          <div class="author-stats">
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">лет практики</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">300+</span>
+              <span class="stat-label">клиентов</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">честности в работе</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-badge reveal">Отзывы</div>
+      <h2 class="section-title reveal">Что говорят<br><span class="grad-text">те, кто прошёл</span></h2>
+
+      <div class="reviews-grid reveal">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Я думала, это очередной марафон с задачками. Оказалось — разговор с собой. Уже на третьем аудио поняла, где именно я разорвана. Это дорогого стоит.»</p>
+          <div class="review-author">Мария К., Москва</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«За 490 рублей я получила больше, чем от курса за 15 тысяч. Alberta говорит так, как будто знает тебя лично. Голосом, без лишнего.»</p>
+          <div class="review-author">Анна Р., Санкт-Петербург</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«День 4 про "один отказ" — я отписалась от звонка, который делала 2 года из вины. В теле — как будто выдохнула впервые за долгое время.»</p>
+          <div class="review-author">Елена В., Краснодар</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BUY ═══════════ -->
+  <section class="section buy-section" id="buy">
+    <div class="buy-bg">
+      <div class="orb orb-buy-1"></div>
+      <div class="orb orb-buy-2"></div>
+    </div>
+    <div class="container">
+      <div class="buy-card reveal">
+        <div class="buy-badge">Ограниченный доступ</div>
+        <h2 class="buy-title">Точка сборки</h2>
+        <p class="buy-sub">5 дней, которые возвращают тебя к себе</p>
+
+        <ul class="buy-includes">
+          <li><span class="check">✦</span> 5 аудио от Alberta (10–15 мин каждое)</li>
+          <li><span class="check">✦</span> Диагностика «Где твоя точка сборки»</li>
+          <li><span class="check">✦</span> Закрытый Telegram-канал</li>
+          <li><span class="check">✦</span> Домашние задания на каждый день</li>
+          <li><span class="check">✦</span> Доступ навсегда</li>
+        </ul>
+
+        <div class="buy-price-row">
+          <span class="buy-price-old">2 000 ₽</span>
+          <span class="buy-price-new">490 ₽</span>
+        </div>
+
+        <a href="https://t.me/albertashirani" target="_blank" class="btn-buy pulse">
+          Оплатить и войти →
+        </a>
+
+        <p class="buy-note">Нажимая кнопку, ты переходишь в Telegram к Alberta — там оплата и ссылка на канал.</p>
+
+        <div class="buy-guarantee">
+          <span class="guarantee-icon">🤍</span>
+          <span>Если после первого аудио поймёшь, что это не твоё — напиши мне. Верну деньги без вопросов.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FAQ ═══════════ -->
+  <section class="section section-dark" id="faq">
+    <div class="container">
+      <div class="section-badge reveal">Вопросы</div>
+      <h2 class="section-title reveal">Часто<br><span class="grad-text">спрашивают</span></h2>
+      <div class="faq-list reveal">
+
+        <details class="faq-item">
+          <summary>Когда начинается? Нужно ли быть онлайн в определённое время?</summary>
+          <div class="faq-body">Нет расписания. Ты получаешь аудио в закрытый Telegram-канал. Слушаешь когда удобно — утром, в обед, в дороге. Никаких прямых эфиров.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Это психология или эзотерика?</summary>
+          <div class="faq-body">Ни то, ни другое в чистом виде. Это практическая работа с тем, как ты принимаешь решения и откуда действуешь. Никакой мистики — только честные вопросы и телесная осознанность.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>У меня уже был похожий курс. Чем это отличается?</summary>
+          <div class="faq-body">Здесь нет длинных лекций, чек-листов и перегрузки. Только 10–15 минут живого голоса Alberta в день. Концентрат без воды. Многие говорят, что за эти 5 дней получили больше, чем за курсы в 10 раз дороже.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Что будет после 5 дней?</summary>
+          <div class="faq-body">На пятый день Alberta поделится возможностью продолжить — в углублённой работе «Глубокая пересборка» (3 недели, три модуля). Без давления: возьмёшь то, что почувствуешь своим.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Можно ли оплатить картой?</summary>
+          <div class="faq-body">Да. После перехода в Telegram Alberta пришлёт ссылку на оплату картой РФ или другим удобным способом.</div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FINAL CTA ═══════════ -->
+  <section class="section final-cta">
+    <div class="container">
+      <div class="final-inner reveal">
+        <p class="final-italic">«Если ты чувствуешь, что компас сбит,<br>а энергия утекает между сферами —</p>
+        <h2 class="final-title">это для <span class="grad-text">тебя.</span></h2>
+        <a href="#buy" class="btn-primary btn-large pulse">490 ₽ — и ты внутри</a>
+        <p class="final-note">Старт сразу после оплаты · Доступ навсегда</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Точка сборки" class="footer-logo-img" />
+          <span>Alberta Shirani</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://t.me/albertashirani" target="_blank">Telegram</a>
+          <a href="mailto:alberta@shirani.ru">Написать</a>
+        </div>
+        <p class="footer-copy">© 2025 Alberta Shirani. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
